@@ -1,0 +1,222 @@
+.item, .boardInfo {
+  margin-right: auto;
+  margin-left: auto; }
+
+header, .boardInfo {
+  display: flex;
+  justify-content: space-between; }
+
+#itemModalForm, #addModalForm {
+  border-style: solid;
+  border-radius: 20px;
+  padding: 10px;
+  background: #EDF2F4;
+  border-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto;
+  position: relative;
+  max-width: 400px;
+  max-height: 400px; }
+  #itemModalForm ul li, #addModalForm ul li {
+    padding: .5rem; }
+  #itemModalForm ul, #addModalForm ul {
+    margin-bottom: 1.5rem; }
+  #itemModalForm input, #addModalForm input, #itemModalForm label, #addModalForm label {
+    display: block;
+    margin: .5rem; }
+  #itemModalForm button, #addModalForm button {
+    position: absolute;
+    background-color: #EDF2F4;
+    bottom: 0px;
+    margin-bottom: .5rem; }
+
+*, *::before, *:after {
+  box-sizing: border-box; }
+
+body, ul, li, p, a {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+h1, h2, h3 {
+  color: #FFFFFF;
+  margin: 0; }
+
+header {
+  background-color: #496570;
+  height: 6rem;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: normal; }
+
+body {
+  background-color: #343638; }
+
+h2 {
+  color: #EDF2F4; }
+
+h1 {
+  color: #EDF2F4; }
+
+header img {
+  width: 40px;
+  height: 40px;
+  margin: 0; }
+
+h1, header img {
+  margin: 3rem; }
+
+h2 {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: normal; }
+
+h3 {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #393939; }
+
+#backlog, #implementation, #complete {
+  min-width: calc(100%/3);
+  margin-top: 1rem; }
+
+#boards {
+  display: inline-block;
+  margin-top: 1rem; }
+  @media (min-width: 768px) {
+    #boards {
+      display: flex; } }
+
+#boards ul {
+  margin: 1rem; }
+
+.item {
+  background-color: #EDF2F4;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  border-radius: 15px; }
+
+.boardInfo {
+  width: 90%;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+.edit {
+  background-color: #E5E5E5;
+  height: 20px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border-style: none; }
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media (min-width: 1024px) {
+    .info {
+      margin-left: 2rem; } }
+  @media (min-width: 768px) {
+    .info {
+      margin-left: 1rem; } }
+  @media (min-width: 320px) {
+    .info {
+      margin-left: 1.5rem; } }
+
+.info time {
+  color: #80CF9E;
+  margin: .5rem; }
+
+.timeInfo img {
+  display: inline; }
+
+.timeInfo {
+  display: flex;
+  align-items: center; }
+
+.item p {
+  margin-left: 1.2rem;
+  color: #868686;
+  font-family: serif;
+  font-size: 15px;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.item h3 {
+  margin-left: 1.2rem;
+  padding-top: .5rem;
+  color: #535353; }
+
+.add {
+  background-color: #E5E5E5;
+  border-radius: 3px;
+  border: none;
+  height: 20px; }
+
+#addModalContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+  #addModalContainer.is-open {
+    display: flex;
+    background-image: url(../icons/x-button.png) no-repeat;
+    background-position: center; }
+
+#itemModalContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+  #itemModalContainer.is-open {
+    display: flex;
+    background-image: url(../icons/x-button.png) no-repeat;
+    background-position: center; }
+
+#itemModalContent {
+  display: block;
+  height: 50vh;
+  width: 50vw; }
+
+#addModalContent {
+  display: block;
+  height: 50vh;
+  width: 50vw;
+  font-family: serif;
+  font-size: 20px;
+  font-weight: normal; }
+
+input:valid {
+  border-color: #80CF9E; }
+
+input:invalid {
+  border-color: red; }
+
+textarea:valid {
+  border-color: #80CF9E; }
+
+textarea:invalid {
+  border-color: red; }

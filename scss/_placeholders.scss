@@ -1,0 +1,47 @@
+%center-element{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  %between{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  %form{
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    background: #EDF2F4;
+    border-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px auto;
+    position: relative;
+    max-width: 400px;
+    max-height: 400px;
+    ul li{
+        padding: .5rem;
+    }
+    ul{
+        margin-bottom: 1.5rem;
+    }
+    input,label{
+        display: block;
+        margin: .5rem;
+    }
+    button{
+       position: absolute;
+       background-color: #EDF2F4;
+       bottom: 0px;
+       margin-bottom: .5rem;
+    }
+
+    textarea{
+      // position:absolute;
+      // bottom: 0;
+    }
+
+  }
